@@ -5,7 +5,7 @@ pipeline {
         maven 'maven3'
     }
      environment {
-	        APP_NAME = "register-app-pipeline"
+	    APP_NAME = "register-app-pipeline"
             RELEASE = "1.0.0"
             DOCKER_USER = "sindhu212"
             DOCKER_PASS = 'docker-cred'
@@ -22,7 +22,7 @@ pipeline {
 
         stage("Checkout from SCM"){
                 steps {
-                    git branch: 'main', credentialsId: 'github', url: 'https://github.com/Ashfaque-9x/register-app'
+                    git branch: 'main', credentialsId: 'github', url: 'https://github.com/harasindhu/register-app'
                 }
         }
 
